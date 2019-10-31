@@ -6,7 +6,7 @@ const server = express(); // creating an instance of an express server
 console.log(process.env.MSG)
 
 server.get('/', (req, res) => {
-  res.status(200).json({ hello: 'Web 23' });
+  res.status(200).json({ message: process.env.MSG });
 });
 
 
